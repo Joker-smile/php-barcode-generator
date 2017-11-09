@@ -14,6 +14,6 @@ $file=file('test.txt');
 //print_r($files);
 for ($i=0;$i<count($file);$i++){
     $generator = new \Picqer\Barcode\BarcodeGeneratorPNG();
-    echo '<img  src="data:image/png;base64,' . base64_encode($generator->getBarcode(trim($file[$i]), $generator::TYPE_CODE_128)) . '" style="margin-top: 50px">'.'<br>'.'<span style="margin-left: 10px">'.trim($file[$i]).'</span>'.'<br>';
+    echo '<img  src="data:image/png;base64,' . base64_encode($generator->getBarcode(trim($file[$i]), $generator::TYPE_CODE_128)) . '" style="margin-top: 50px">'.'<br>'.'<span style="letter-spacing:10px;">'.trim($file[$i]).'</span>'.'<br>';
 }
 
